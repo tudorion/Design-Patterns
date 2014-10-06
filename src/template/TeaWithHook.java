@@ -16,7 +16,7 @@ public class TeaWithHook extends CaffeineBeverageWithHook{
     public boolean customerWantsCondiments() {
 
         System.out.println("Would you like lemon and honey with your tea? (y/n)");
-        String answer = super.getUserInput();
+        String answer = getUserInput();
 
         return (answer.toLowerCase().startsWith("y"));
     }
